@@ -23,7 +23,7 @@ public class Persona {
    
    public Persona(String dni, String nombre, String apellido, LocalDate fechaNacimiento, 
 		   		String genero, String direccion, String telefono, String email) {
-	   this.dni=dni;
+	   setDni(dni);
 	   this.nombre=nombre;
 	   this.apellido=apellido;
 	   this.fechaNacimiento=fechaNacimiento;
