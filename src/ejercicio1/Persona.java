@@ -34,11 +34,11 @@ public class Persona {
 	 
    }
    
-// Verifica el DNI tenga un formato válido (7 o 8 dígitos)
+// Verificamos que el DNI tenga exactamente 8 digitos numericos
 
   public static boolean verificarDNI(String dni) throws ExVerificarDNI {
-      if (dni == null || !dni.matches("\\d{7,8}")) {
-          throw new ExVerificarDNI("El DNI debe contener 7 u 8 dígitos numéricos.");
+      if (dni == null || !dni.matches("\\d{8}")) {
+          throw new ExVerificarDNI("El DNI debe contener 8 digitos numericos.");
       }
       return true;
   }

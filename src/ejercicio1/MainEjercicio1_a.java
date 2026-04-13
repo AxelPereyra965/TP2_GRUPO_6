@@ -4,13 +4,15 @@ public class MainEjercicio1_a {
 
     public static void main(String[] args) {
 
-        try {
+        try 
+        {
             Persona p = new Persona("AA202020", "Juan", "Perez", null, "", "", "", "");
             Persona.verificarDNI(p.getDni());
             System.out.println("Persona agregada correctamente");
 
-        } catch (ExVerificarDNI e) {
-        	//Logica DNI invalido
+        } catch (ExVerificarDNI e) 
+        {
+        	System.out.println("Persona no agregada por no verificar el DNI");
         }
 
         try {
@@ -18,8 +20,9 @@ public class MainEjercicio1_a {
             Persona.verificarDNI(p2.getDni());
             System.out.println("Persona agregada correctamente");
 
-        } catch (ExVerificarDNI e) {
-            //Logica DNI invalido
+        } catch (ExVerificarDNI e) 
+        {
+        	System.out.println("Persona no agregada por no verificar el DNI");
         }
 
     }
