@@ -29,9 +29,6 @@ public class Persona {
 	   this.fechaNacimiento=fechaNacimiento;
 	   this.genero=genero;
 	   this.direccion=direccion;
-	   this.fechaNacimiento=fechaNacimiento;
-	   this.genero=genero;
-	   this.direccion=direccion;
 	   this.telefono=telefono;
 	   this.email=email;
 	 
