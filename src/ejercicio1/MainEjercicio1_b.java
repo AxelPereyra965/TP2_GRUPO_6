@@ -4,6 +4,8 @@ public class MainEjercicio1_b {
 
     public static void main(String[] args) {
     	
+        ArrayList<Empleado> listaEmpleados = new ArrayList<>();
+    	
         Empleado e1 = new Empleado(
                 "12345678", "Joel", "González",
                 LocalDate.of(1995, 4, 23),
@@ -24,6 +26,27 @@ public class MainEjercicio1_b {
                 "Masculino", "Boulevard Central 789", "1199887766", "carlos@mail.com",
                 "Gerente de Proyecto"
             );
+            
+            Empleado e4 = new Empleado(
+                    "45678959", "Horacio", "Perez",
+                    LocalDate.of(1993, 6, 18),
+                    "Masculino", "Calle Los Troncos 637", "1195063302", "Horacio@mail.com",
+                    "Diseñador UX/UI"
+                );
+
+            Empleado e5 = new Empleado(
+                "45678901", "Sebastián", "López",
+                LocalDate.of(1993, 6, 18),
+                "Masculino", "Calle Los Álamos 321", "1155663322", "sebas@mail.com",
+                "Diseñador UX/UI"
+            );
+
+            listaEmpleados.add(e1);
+            listaEmpleados.add(e2);
+            listaEmpleados.add(e3);
+            listaEmpleados.add(e4);
+            listaEmpleados.add(e5);
+
         
     }
 
