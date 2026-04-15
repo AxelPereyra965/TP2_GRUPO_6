@@ -32,7 +32,7 @@ public class MainEjercicio1_b {
                     LocalDate.of(1993, 6, 18),
                     "Masculino", "Calle Los Troncos 637", "1195063302", "Horacio@mail.com",
                     "Diseñador UX/UI"
-                );
+            );
 
             Empleado e5 = new Empleado(
                 "45678901", "Sebastián", "López",
@@ -46,6 +46,14 @@ public class MainEjercicio1_b {
             listaEmpleados.add(e3);
             listaEmpleados.add(e4);
             listaEmpleados.add(e5);
+            
+            System.out.println("=== Listado de todos los empleados (Iterator) ===");
+            Iterator<Empleado> it = listaEmpleados.iterator();
+            while (it.hasNext()) {
+                System.out.println(it.next());
+            }
+            
+            System.out.println("Próximo legajo disponible: " + Empleado.devuelveProximoLegajo());
 
         
     }
