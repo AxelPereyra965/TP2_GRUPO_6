@@ -1,6 +1,6 @@
 package ejercicio1;
 
-public class Empleado extends Persona  {
+public class Empleado extends Persona implements Comparable<Empleado>{
 	
 	// Atributos
 	
@@ -73,6 +73,11 @@ public class Empleado extends Persona  {
     public static int devuelveProximoLegajo() 
     {
         return contador + 1;
+    }
+    
+    @Override
+    public int compareTo(Empleado otro) {
+        return this.getDni().compareTo(otro.getDni());
     }
 
 }

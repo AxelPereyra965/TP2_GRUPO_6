@@ -134,6 +134,11 @@ public class Persona {
 				+ fechaNacimiento + ", genero=" + genero + ", direccion=" + direccion + ", telefono=" + telefono
 				+ ", email=" + email + "]";
 	}
+
+	public int compareTo(Empleado otro) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }
 

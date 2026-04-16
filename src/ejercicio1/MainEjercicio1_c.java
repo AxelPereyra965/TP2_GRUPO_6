@@ -1,4 +1,5 @@
 package ejercicio1;
+import java.util.TreeSet;
 
 public class MainEjercicio1_c {
 
@@ -9,6 +10,14 @@ public class MainEjercicio1_c {
         Empleado e3 = new Empleado("20333333", "Luis", "Martinez", null, "", "", "", "", "IT");
         Empleado e4 = new Empleado("20444444", "Sofia", "Lopez", null, "", "", "", "", "RRHH");
         Empleado e5 = new Empleado("20555555", "Carlos", "Diaz", null, "", "", "", "", "Soporte");
+        
+        TreeSet<Empleado> listaEmpleados = new TreeSet<Empleado>();
+
+        listaEmpleados.add(e1);
+        listaEmpleados.add(e2);
+        listaEmpleados.add(e3);
+        listaEmpleados.add(e4);
+        listaEmpleados.add(e5);
 
     }
 }
