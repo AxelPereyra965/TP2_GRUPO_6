@@ -1,4 +1,6 @@
 package ejercicio1;
+
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class MainEjercicio1_c {
@@ -18,6 +20,14 @@ public class MainEjercicio1_c {
         listaEmpleados.add(e3);
         listaEmpleados.add(e4);
         listaEmpleados.add(e5);
+        
+        System.out.println("=== Listado de empleados ===");
+        Iterator<Empleado> it = listaEmpleados.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
 
+        System.out.println("Próximo legajo disponible: " + Empleado.devuelveProximoLegajo());
     }
+
 }
