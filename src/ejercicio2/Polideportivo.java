@@ -24,6 +24,34 @@ public class Polideportivo implements interfazEdificio, InterfazInstalacionDepor
     public double getSuperficieEdificio() {
         return superficie;
         
-        
-        
     }
+    
+
+    // Get y Set
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getSuperficie() {
+        return superficie;
+    }
+
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setSuperficie(double superficie) {
+        this.superficie = superficie;
+    }
+
+    public void setTipoInstalacion(int tipoInstalacion) {
+        this.tipoInstalacion = tipoInstalacion;
+    }
+
+    // Mostrar la información
+    @Override
+    public String toString() {
+        return "Polideportivo nombre=" + nombre + ", superficie=" + superficie + ", tipoInstalacion=" + tipoInstalacion ;
+    }
+}
