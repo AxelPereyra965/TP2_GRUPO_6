@@ -37,10 +37,19 @@ public class MainEjercicio1_d {
                 "3099944", "Analis", "Perez",
                 LocalDate.of(1995, 2, 28),
                 "Femenino", "Pasaje 440", "5555555555", "analia@mail.com"
-            ); {
-		 
-	 }
-    
+            ); 
+        
+        HashSet<Persona> conjuntoPersonas = new HashSet<>();
+        conjuntoPersonas.add(p1);
+        conjuntoPersonas.add(p2);
+        conjuntoPersonas.add(p3);
+        conjuntoPersonas.add(p4);
+        conjuntoPersonas.add(p5);
+
+        System.out.println("=== Listado de personas ===");
+        Iterator<Persona> it = conjuntoPersonas.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
     }
 }
-	
