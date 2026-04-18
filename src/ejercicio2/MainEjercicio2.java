@@ -23,8 +23,17 @@ public class MainEjercicio2 {
         lista.add(p3);
         lista.add(e1);
         lista.add(e2);
-
-
+        
+        Iterator<Object> it = lista.iterator();
+        
+        System.out.println("Lista de Instalaciones y Edificios");
+        
+        while (it.hasNext()) { 
+            Object item = it.next();
+            System.out.println(item.toString());
         }
+        
+
+      
     }
 }
